@@ -1,15 +1,17 @@
 import React from 'react'
 import PropTypes from "prop-types";
 
-let whiteKnightUnicode = '\u265e';
+const whiteKnightUnicode = '\u2658';
+const blackKnightUnicode = '\u265e';
 
 Knight.propTypes = {
   isBlack: PropTypes.bool,
 }
 
 export default function Knight ({ isBlack }) {
-  const fill = isBlack ? "black" : "white";
-  return <span style={{ color: fill }}>{whiteKnightUnicode}</span>;
+  const glyph = isBlack ? blackKnightUnicode : whiteKnightUnicode;
+  const fill = isBlack ? "white" : "black";
+  return <span style={{ color: fill }}>{whiteKnightUnicode}{blackKnightUnicode}</span>;
 }
 
 Knight.defaultProps = {

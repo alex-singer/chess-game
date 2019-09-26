@@ -1,14 +1,13 @@
 import React from 'react';
 import './App.css';
+import Square from "./Square";
 import Knight from "./Knight";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <Knight isBlack/>
-      </header>
-    </div>
+    <Square isBlack>
+      <Knight/>
+    </Square>
   );
 }
 

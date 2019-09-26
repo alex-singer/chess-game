@@ -3,6 +3,7 @@ import { configure, shallow } from "enzyme";
 import Adapter from "enzyme-adapter-react-16";
 import "jest-styled-components";
 import Knight from "../Knight";
+
 configure({ adapter: new Adapter() });
 
 describe("Knight", () => {
