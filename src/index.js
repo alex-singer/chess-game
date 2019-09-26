@@ -7,12 +7,12 @@ import Knight from './Knight';
 
 ReactDOM.render(
   <>
-    <Square >
-      <Knight ></Knight>
-    </Square> 
     <Square isBlack>
-      <Knight ></Knight>
-    </Square> 
+      <Knight/>
+    </Square>
+    <Square>
+      <Knight isBlack/>
+    </Square>
   </>
   , document.getElementById('root'));
 

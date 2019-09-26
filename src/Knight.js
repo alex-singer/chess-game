@@ -1,21 +1,16 @@
 import React from 'react'
 import PropTypes from "prop-types";
-
-const whiteKnightUnicode = '\u2658';
-const blackKnightUnicode = '\u265e';
+import BlackKnightIcon from "./icons/BlackKnight";
+import WhiteKnightIcon from "./icons/WhiteKnight";
 
 Knight.propTypes = {
   isBlack: PropTypes.bool,
 }
 
 export default function Knight ({ isBlack }) {
-  const glyph = isBlack ? blackKnightUnicode : whiteKnightUnicode;
-  const fill = isBlack ? "white" : "black";
-  return <span style={{ color: fill }}>{whiteKnightUnicode}{blackKnightUnicode}</span>;
+  const icon = isBlack 
+    ? <BlackKnightIcon width="100%" height="100%" viewBox="0 0 50 50"/> 
+    : <WhiteKnightIcon width="100%" height="100%" viewBox="0 0 50 50"/>;
+  return <div>{icon}</div>;
 }
 
-Knight.defaultProps = {
-  fill: "black",
-};
-
- // &#x265e

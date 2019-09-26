@@ -8,11 +8,10 @@ Square.propTypes = {
 
 export default function Square ({ isBlack, children}) {
   const fill = isBlack ? "black" : "white";
-  const stroke = isBlack ? "0 0 1em white" : "0 0 10em black";
   return (
     <div 
       style={{ 
-        backgroundColor: "blue",
+        backgroundColor: fill,
         width: "100%",
         height: "100%",
       }}
