@@ -2,8 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import * as serviceWorker from './serviceWorker';
 import Board from "./Board";
-import Square from "./Square";
-import Knight from './Knight';
 
 ReactDOM.render(
   <div style={{ width: "1000px", height: "1000px" }}>
