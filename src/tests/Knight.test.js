@@ -18,9 +18,9 @@ describe("Knight", () => {
     expect(wrapper.type()).toBe("span");
   });
 
-  it("makes peice black is 'isBlack' and white if not", () => {
-    expect(wrapper.prop("style")["color"]).toContain("black");
+  it("renders a black icon if 'isBlack' and a white icon if not", () => {
+    expect(wrapper.prop("children")["type"].name).toBe("SvgBlackKnight");
     wrapper = shallow(<Knight />);
-    expect(wrapper.prop("style")["color"]).toContain("white");
+    expect(wrapper.prop("children")["type"].name).toBe("SvgWhiteKnight");
   });
 });

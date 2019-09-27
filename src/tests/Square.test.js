@@ -25,12 +25,6 @@ describe("Square", () => {
     expect(wrapper.prop("style")["backgroundColor"]).toContain("white");
   });
 
-  it("makes stroke white if 'isBlack' and black if not", () => {
-    expect(wrapper.prop("style")["text-shadow"]).toContain("white");
-    wrapper = shallow(<Square />);
-    expect(wrapper.prop("style")["text-shadow"]).toContain("black");
-  });
-
   it("passes 'children' down to the div", () => {
     expect(wrapper.prop("children")).toBe(text);
   });
