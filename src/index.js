@@ -1,19 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import * as serviceWorker from './serviceWorker';
+import Board from "./Board";
 import Square from "./Square";
 import Knight from './Knight';
 
 ReactDOM.render(
-  <>
-    <Square isBlack>
-      <Knight/>
-    </Square>
-    <Square>
-      <Knight isBlack/>
-    </Square>
-  </>
+  <div style={{ width: "1000px", height: "1000px" }}>
+    <Board knightPosition={[4,3]} />
+  </div>
   , document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
