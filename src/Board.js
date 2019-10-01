@@ -16,7 +16,7 @@ function renderSquare(i, [knightX, knightY]) {
   const piece = isPieceHere ? <Knight isBlack/> : null;
 
   return (
-    <div key={i} onClick={() => handleSquareClick(x, y )} style={{ width: "12.5%", height: "12.5%" }}>
+    <div key={i} onClick={() => handleSquareClick(x, y)} style={{ width: "12.5%", height: "12.5%" }}>
       <Square isBlack={isBlack}>{piece}</Square>
     </div>
   )
