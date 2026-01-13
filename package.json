@@ -5,7 +5,7 @@
   "dependencies": {
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
-    "react-scripts": "3.1.2"
+    "react-scripts": "5.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -30,7 +30,7 @@
     ]
   },
   "devDependencies": {
-    "@svgr/cli": "^4.3.3",
+    "@svgr/cli": "^8.1.0",
     "babel-jest": "^24.9.0",
     "enzyme": "^3.10.0",
     "enzyme-adapter-react-16": "^1.14.0",
